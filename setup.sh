@@ -91,7 +91,7 @@ echo -e "[ ${tyblue}NOTES${NC} ] Multi path, Multi port, support debian 10 , Ubu
 sleep 2
 echo -e "[ ${green}INFO${NC} ] By darnix"
 sleep 1
-echo -e "[ ${green}INFO${NC} ] t.me/darnix1"
+echo -e "[ ${green}INFO${NC} ] t.me/CloudRedUwu"
 clear
 
 secs_to_human() {
@@ -221,7 +221,7 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
+wget -q https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/dependencies.sh;chmod +x dependencies.sh;./dependencies.sh
 rm dependencies.sh
 clear
 
@@ -277,21 +277,21 @@ echo -e "${tyblue}|     PROCESS INSTALLED SSH & OPENVPN      |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Install Xray
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|          PROCESS INSTALLED XRAY          |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 #Install SSH Websocket
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|      PROCESS INSTALLED WEBSOCKET SSH     |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 wget https://raw.githubusercontent.com/darnix1/mysc/main/websocket/nontls.sh && chmod +x nontls.sh && ./nontls.sh
 clear
@@ -301,21 +301,21 @@ echo -e "${tyblue}|          PROCESS INSTALLED OHP           |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/ohp.sh && chmod +x ohp.sh && ./ohp.sh
+wget https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/ohp.sh && chmod +x ohp.sh && ./ohp.sh
 #Install AutoBackup
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|          PROCESS INSTALLED AUTO BACKUP           |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 wget https://raw.githubusercontent.com/driwwstore/project/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 #Download Extra Menu
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|           DOWNLOAD EXTRA MENU            |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
-wget https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/update.sh && chmod +x update.sh && ./update.sh
 clear
 
 ############# LawNET #############
@@ -349,7 +349,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/darnix1/SSH-XRAY/main/data/version  )
+serverV=$( curl -sS https://raw.githubusercontent.com/CloudRedUwu/SSH-XRAY/main/data/version  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
