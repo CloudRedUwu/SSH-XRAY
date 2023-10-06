@@ -1,0 +1,59 @@
+#!/bin/bash
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+###########- COLOR CODE -##############
+colornow=$(cat /etc/yudhynetwork/theme/color.conf)
+NC="\e[0m"
+RED="\033[0;31m" 
+COLOR1="$(cat /etc/yudhynetwork/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
+COLBG1="$(cat /etc/yudhynetwork/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')" 
+WH='\033[1;37m'
+# Getting
+export CHATID="1210833546"
+export KEY="6006599143:AAEgstCAioq35JgX97HaW_G3TAkLKzLZS_w"
+export TIME="10"
+export URL="https://api.telegram.org/bot$KEY/sendMessage"
+clear
+#IZIN SCRIPT
+MYIP=$(curl -sS ipv4.icanhazip.com)
+echo -e "\e[32mloading...\e[0m"
+clear
+
+echo -e "\e[32mloading...\e[0m"
+clear
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1 ${NC} ${COLBG1}             ${WH}• VMESS PANEL MENU •              ${NC} $COLOR1 $NC"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e " $COLOR1┌───────────────────────────────────────────────┐${NC}"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}AGREGAR VMESS${NC}     ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}ELIMINAR VMESS${NC}   $COLOR1 $NC"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}RENOVAR VMESS${NC}    ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}USERS ONLINE${NC}    $COLOR1 $NC"
+echo -e " $COLOR1 $NC                                              ${NC} $COLOR1 $NC"
+echo -e " $COLOR1 $NC   ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}                              $COLOR1 $NC"
+echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
+#echo -e "$COLOR1┌────────────────────── ${WH}BY${NC} ${COLOR1}───────────────────────┐${NC}"
+#echo -e "$COLOR1 ${NC}                 ${WH}• Darnix •${NC}                 $COLOR1 $NC"
+#echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+read -p "Select From Options [ 01 - 05 ] : " menu
+case $menu in
+1 | 01)
+    addws
+    ;;
+2 | 02)
+    renewws
+    ;;
+3 | 03)
+    delws
+    ;;
+4 | 04)
+    cekws
+    ;;
+5 | 05)
+    menu
+    ;;
+*)
+echo -e ""
+echo -e "Lu Salah Tekan Gblok"
+sleep 1
+m-vmess
+;;
+esac
