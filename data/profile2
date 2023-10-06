@@ -1,0 +1,16 @@
+#!/bin/bash
+
+clear
+python3 /root/profile/art
+vnstat -m
+
+echo ""
+read -n 1 -p " Presione Intro para usar el comando de menú o x para salir " titit
+echo ""
+if [ -z $titit ]; then
+  menu; echo ""
+elif [ $titit = "x" ]; then
+  :
+else
+  /root/profile/./profile2; echo ""
+fi
